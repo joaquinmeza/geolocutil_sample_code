@@ -12,13 +12,14 @@ A Python service that provides geolocation data using the OpenWeatherMap Geocodi
 1. Clone the repository:
     ```bash
     $ git clone <repository-url>
-    $ cd geolocation-service
+    $ cd geolocutil_sample_code
     ```
-2. Install pipenv and install dependencies:
+2. Install pipenv and install dependencies (recommended):
     ```bash 
    $ pip install pipenv --user
    $ pipenv --python 3.12
    $ pipenv install
+   $ pipenv shell
     ```
    or you can skip pipenv and do 
    ```bash
@@ -57,6 +58,7 @@ The service can be used in two ways:
       
 2. Command Line Utility
 
+   note: you may need ot use `python3` on some macs/linux machines instead of `python`
    ```bash
    $ python geolocutil.py [flags] locations
    ```
@@ -100,6 +102,11 @@ The service can be used in two ways:
    ]
    ```
    
+3. Running tests  
+To run tests you will need to use the unittest module in python as follows:
+   ```bash
+   $ python -m unittest discover -s ./tests -t ./tests
+   ```
    
 
 ### Input Formats
