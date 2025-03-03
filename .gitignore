@@ -1,0 +1,6 @@
+.idea/
+.swp
+__pycache__/
+*.py[cod]
+.env
+.mypy_cache/
